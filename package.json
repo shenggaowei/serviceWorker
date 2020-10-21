@@ -1,0 +1,19 @@
+{
+  "name": "serviceworker",
+  "version": "1.0.0",
+  "description": "sevieWorker exercise",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test",
+    "start": "node index"
+  },
+  "keywords": [
+    "worker"
+  ],
+  "author": "魏升高",
+  "license": "ISC"
+}
