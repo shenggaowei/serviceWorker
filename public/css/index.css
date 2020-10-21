@@ -1,0 +1,27 @@
+html body {
+    background: #9a7f4e;
+}
+
+.content{
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    display: block;
+    width: 400px;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 16px;
+    color: orange;
+}

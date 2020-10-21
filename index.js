@@ -1,13 +1,19 @@
 const express = require('express')
-const path = require('path')
+const data = require('./model/test');
+
 const app = express()
 const port = 3000
-const root = path.join(__dirname, 'src')
 
-app.use(express.static('src'));
+app.use(express.static('public'));
 
+// 相应html
 app.get('/', (req, res) => {
-  res.sendFile('index.html', { root })
+  res.sendFile('index.html')
 });
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+// 数据接口
+app.get('/api/data', function(req, res) {
+  res.json(data);
+})
+
+app.listen(port, () => console.log(`应用在 ${port} 端口处启动啦!`))
